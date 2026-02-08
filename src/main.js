@@ -23,7 +23,7 @@ const progressBar = document.getElementById('progress');
 // Questions Data
 const questions = [
   {
-    question: "Which movement decided that I could no longer keep my feelings for you to myself?",
+    question: "Which moment decided that I could no longer keep my feelings for you to myself?",
     options: ["Khushi's birthday gift planning", "You having bumble", "Milan night ride", "Ethnic day"],
     answer: "Milan night ride"
   },
@@ -278,3 +278,4 @@ function fireConfetti() {
     confetti(Object.assign({}, defaults, { particleCount, origin: { x: random(0.7, 0.9), y: Math.random() - 0.2 } }));
   }, 250);
 }
+
