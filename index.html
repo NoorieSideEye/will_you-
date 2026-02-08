@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Background Hearts -->
+    <div class="bg-hearts"></div>
+
+    <!-- Landing Page -->
+    <section id="landing-page" class="screen active">
+      <h1>Hey, my love (Taseenah) 💖</h1>
+      <p>Can I ask you a few questions because I have something to tell you? 💕</p>
+      <button id="start-btn" class="btn primary">Answer these 5 questions 💕</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-page" class="screen hidden">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div id="mascot" class="mascot">😌</div>
+      <h2 id="question-text">Question 1</h2>
+      <p id="feedback-text" class="feedback"></p>
+      <div class="options" id="options-container">
+        <!-- Options will be injected strictly here -->
+      </div>
+    </section>
+
+    <!-- High Score Logic: Proposal -->
+    <section id="proposal-page" class="screen hidden">
+      <h1>Will you be my Valentine? 💖</h1>
+      <div class="gif-container">
+        <img
+          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM2Z205Y3Z6ZGcwZ205Y3Z6ZGcwZ205Y3Z6ZGcwZ205Y3Z6ZGcwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRv0ThflsHCqDrG/giphy.gif"
+          alt="Cute Bear" class="cute-gif" />
+      </div>
+      <div class="buttons">
+        <button id="yes-btn" class="btn yes">YES 💕</button>
+        <button id="no-btn" class="btn no">NO 😒</button>
+      </div>
+    </section>
+
+    <!-- Low Score Logic: Angry/Warning -->
+    <section id="angry-page" class="screen hidden">
+      <h1>Hmm... 😠</h1>
+      <p>You didn't do that well...</p>
+      <p>And now I'm a little angry.</p>
+      <button id="continue-angry-btn" class="btn primary">Continue...</button>
+    </section>
+
+    <!-- Low Score Logic: Second Chance -->
+    <section id="second-chance-page" class="screen hidden">
+      <h1>Will you STILL be my Valentine? 😤❤️</h1>
+      <div class="buttons">
+        <button id="yes-angry-btn" class="btn yes">YES 😤</button>
+        <button id="no-angry-btn" class="btn no">NO</button>
+      </div>
+    </section>
+
+    <!-- Celebration Screen -->
+    <section id="celebration-page" class="screen hidden">
+      <h1>YAY!! You’re officially my Valentine 💞</h1>
+      <p>I knew you'd say yes!</p>
+      <img
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM2Z205Y3Z6ZGcwZ205Y3Z6ZGcwZ205Y3Z6ZGcwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T86i6yDyOYz7J6dPhf/giphy.gif"
+        alt="Happy Cat" class="cute-gif" />
+    </section>
+
+    <!-- Forgiven Screen -->
+    <section id="forgiven-page" class="screen hidden">
+      <h1>Fine 😤💗</h1>
+      <p>I forgive you. Be my Valentine.</p>
+      <img
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM2Z205Y3Z6ZGcwZ205Y3Z6ZGcwZ205Y3Z6ZGcwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"
+        alt="Sassy Cat" class="cute-gif" />
+    </section>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
